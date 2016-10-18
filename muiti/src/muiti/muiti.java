@@ -402,7 +402,7 @@ public class muiti {
 			System.out.printf("Error!Wrong Command!");
 	}
 	else
-		System.out.printf("Error!Wrong Command!");
+		System.out.printf("Wrong Command!");
 	String ss1 = exp;
 	String ss2 = "";
 	switch(choice)
@@ -421,7 +421,7 @@ public class muiti {
 			ss1 = resultFormat(ss1);//输出结果基本整理
 			System.out.printf("%s\n",ss1);
 			ss1 = degreeFormat(ss1);//输出结果进一步整理
-			System.out.printf("改进输入：%s\n",ss1);
+			System.out.printf("改进的输入：%s\n",ss1);
 			break;
 		case 2:
 			muiti s1 = new muiti();
