@@ -1,0 +1,50 @@
+Found a 5 line (35 tokens) duplication in the following files: 
+Starting at line 353 of D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java
+Starting at line 358 of D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java
+
+				if (exp.substring(i, i + 1).equals("+")) {
+					end = i;
+					mydiv.add(exp.substring(start, end));
+					System.out.printf("%s\n", mydiv.get(j));
+					j++;
+=====================================================================
+Found a 5 line (33 tokens) duplication in the following files: 
+Starting at line 55 of D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java
+Starting at line 450 of D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java
+
+        char ch;
+		str = str + "+"; //在字符串最后添加加号便于处理
+        for (i = 0; i < str.length(); i++) {
+			ch = str.charAt(i);
+			if ((ch != '*') && (ch != '+') && ((ch > '9') || (ch < '0'))) { //字母
+=====================================================================
+Found a 2 line (29 tokens) duplication in the following files: 
+Starting at line 414 of D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java
+Starting at line 431 of D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java
+
+		for (int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) == 32) { //判断赋值变量的个数
+=====================================================================
+Found a 4 line (28 tokens) duplication in the following files: 
+Starting at line 150 of D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java
+Starting at line 156 of D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java
+
+		}
+		for (i = 0; i < coef.length(); i++) {
+			char chr = coef.charAt(i);
+			if (chr == '-') {
+=====================================================================
+Found a 3 line (25 tokens) duplication in the following files: 
+Starting at line 248 of D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java
+Starting at line 251 of D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java
+
+					if (i != arr.size() - 1 && arr.get(i + 1).intCoef > 0) {
+						s = s + Integer.toString(arrCoef.get(i)) 
+						+ arr.get(i).stringCoef + "+";
+=====================================================================
+Found a 2 line (25 tokens) duplication in the following files: 
+Starting at line 554 of D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java
+Starting at line 568 of D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java
+
+				mydiv = s.stringCut(ss1);
+				for (int k = 0; k < mydiv.size(); k++) {

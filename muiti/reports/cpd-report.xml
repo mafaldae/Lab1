@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="GBK"?>
+<pmd-cpd>
+   <duplication lines="5" tokens="35">
+      <file line="353" path="D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java"/>
+      <file line="358" path="D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java"/>
+      <codefragment><![CDATA[				if (exp.substring(i, i + 1).equals("+")) {
+					end = i;
+					mydiv.add(exp.substring(start, end));
+					System.out.printf("%s\n", mydiv.get(j));
+					j++;]]></codefragment>
+   </duplication>
+   <duplication lines="5" tokens="34">
+      <file line="55" path="D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java"/>
+      <file line="450" path="D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java"/>
+      <codefragment><![CDATA[        char ch;
+		str = str + "+"; //在字符串最后添加加号便于处理
+        for (i = 0; i < str.length(); i++) {
+			ch = str.charAt(i);
+			if (ch != '*' && ch != '+' && (ch > '9' || ch < '0')) { //字母]]></codefragment>
+   </duplication>
+   <duplication lines="2" tokens="29">
+      <file line="414" path="D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java"/>
+      <file line="431" path="D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java"/>
+      <codefragment><![CDATA[		for (int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) == 32) { //判断赋值变量的个数]]></codefragment>
+   </duplication>
+   <duplication lines="4" tokens="28">
+      <file line="150" path="D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java"/>
+      <file line="156" path="D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java"/>
+      <codefragment><![CDATA[		}
+		for (i = 0; i < coef.length(); i++) {
+			char chr = coef.charAt(i);
+			if (chr == '-') {]]></codefragment>
+   </duplication>
+   <duplication lines="3" tokens="25">
+      <file line="248" path="D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java"/>
+      <file line="251" path="D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java"/>
+      <codefragment><![CDATA[					if (i != arr.size() - 1 && arr.get(i + 1).intCoef > 0) {
+						s = s + Integer.toString(arrCoef.get(i)) 
+						+ arr.get(i).stringCoef + "+";]]></codefragment>
+   </duplication>
+   <duplication lines="2" tokens="25">
+      <file line="554" path="D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java"/>
+      <file line="568" path="D:\Users\zhangxiaokai\Desktop\Lab4\muiti\src\muiti\Muiti.java"/>
+      <codefragment><![CDATA[				mydiv = s.stringCut(ss1);
+				for (int k = 0; k < mydiv.size(); k++) {]]></codefragment>
+   </duplication>
+</pmd-cpd>
