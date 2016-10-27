@@ -160,9 +160,6 @@ public class Muiti {
 		    	p.stringCoef = p.stringCoef + String.valueOf(chr);
 		    }
 		}
-//		System.out.printf("degree£º%d\n",p.degree);
-//		System.out.printf("intCoef:%s\n",p.intCoef);
-//		System.out.printf("stringCoef:%s\n",p.stringCoef);
 		return p;
 	}
 	
