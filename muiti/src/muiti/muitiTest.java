@@ -9,6 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import muiti.muiti.Polynomial;
+import muiti.muiti.valueCommand;
 
 public class muitiTest {
 	private String exp;
@@ -25,20 +26,21 @@ public class muitiTest {
 	}
 
 	@Test
-	public void testDerivative() {
-		System.out.println("求导功能测试 用例1");
-		exp = "2*x+3*x*y";
-		muitiTest test = new muitiTest();
+	public void testSimplify() {
+		exp = "2xx+3xy";
 		muiti m = new muiti();
-		result = "2+3*y";
+		ArrayList<valueCommand> valueGroup = new ArrayList<valueCommand>();
+		result = "2xx+9x";
 		Mydiv =m.stringCut(exp);
-		String var = "x";
+		String command = "!simplify y=3";
+		int num = muiti.getBlankNum(command);
+		valueGroup = muiti.commandDeal(command);
+		String var = "y";
+		int i=0;
 		for (int k = 0;k < Mydiv.size();k++)
 			arr.add(m.expression(var,Mydiv.get(k)));
-		String testresult = m.derivative(arr, var);
+		String testresult = m.simplify(arr,valueGroup,num,i);
 		assertEquals(result, testresult);
-		//Assert.assertEquals(i+1, muiti.expression(""));
-		//fail("Not yet implemented");
 	}
-
 }
+

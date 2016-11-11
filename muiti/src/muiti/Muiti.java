@@ -8,7 +8,7 @@ public class muiti {
 		int intCoef;//整数系数
 		int degree;//幂
 	}
-	public class valueCommand{//赋值要求中每个命令的小项
+	public static class valueCommand{//赋值要求中每个命令的小项
 		String var;//变量
 		int val;//赋值
 	}
@@ -292,13 +292,13 @@ public class muiti {
 	}
 	
 	//对化简命令进行处理，提取待化简变量以及对应的变量值
-	public ArrayList<valueCommand> commandDeal(String command){
+	public static ArrayList<valueCommand> commandDeal(String command){
 		ArrayList<valueCommand> valueGroup = new ArrayList<valueCommand>();
 		int i;
 		int blankNum=0;//空格数与赋值变量数相等
 		muiti s = new muiti();
 		ArrayList<Integer> blankPos = new ArrayList<Integer>();//标记空格在command字符串中的位置
-		blankNum = s.getBlankNum(command);
+		blankNum = muiti.getBlankNum(command);
 		blankPos = s.getBlankPos(command);
 		for (i=0;i<blankNum;i++){
 			valueCommand tmp = new valueCommand();
@@ -316,7 +316,7 @@ public class muiti {
 	}
 	
 	//获得目标字符串中的空格个数
-	public int getBlankNum(String str){
+	public static int getBlankNum(String str){
 		int blankNum=0;
 		for (int i=0;i<str.length();i++){
 			if (str.charAt(i)==32){//判断赋值变量的个数
@@ -441,18 +441,6 @@ public class muiti {
 	System.out.printf("输入内容为：%s\n",exp);//输出
 	ArrayList<String> Mydiv = new ArrayList<String>();//切片
 	muiti s = new muiti();
-//	//判断字符串
-//	for(int i = 0;i<exp.length();i++)
-//	{
-//		char chr = exp.charAt(i);
-//		if((chr>='a'&&chr<='z')||(chr>='0'&&chr<='9')||(chr=='+')||(chr=='-')||(chr=='*')||(chr==32)||(chr==9))
-//			;
-//		else
-//		{
-//			System.out.printf("You have the wrong poly!");
-//			System.exit(-1);
-//		}
-//	}
 	
 	String command = in.nextLine();//命令
 	int choice=0;
